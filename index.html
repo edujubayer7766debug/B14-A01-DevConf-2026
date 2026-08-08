@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -41,7 +42,7 @@
         </nav>
     </header>
 
-    <section class="hero-section">
+    <section class="hero-section container">
         <div>
             <p>
 
@@ -60,126 +61,340 @@
         </div>
 
     </section>
-    <section class="about-section">
+    <section class="about-section container">
         <div class="about-text">
-            <h2>MEET THE SPEAKERS</h2>
+            <h2>Meet The Speakers</h2>
         </div>
     </section>
     <section class="speaker-section">
-        <div class="speaker-image-section">
+        <div class="speaker-image-section container">
             <div class="box-1">
                 <img src="./assets/andrej.png" alt="Speaker 1">
-                <p>Andrej Babić</p>
+                <div class="speaker-text">
+                    <h5>AI / ML</h5>
+                    <h2>Andrej Karpathy</h2>
+                    <p>Pretraining team, Anthropic</p>
+                </div>
             </div>
             <div class="box-2">
                 <img src="./assets/demis.png" alt="Speaker 2">
-                <p>Demis Hassabis</p>
+                <div class="speaker-text">
+                    <h5>Cloud & DevOps</h5>
+                <h2>Demis Hassabis</h2>
+                <p>Co-Founder and CEO, Google DeepMind</p>
+                </div>
             </div>
             <div class="box-3">
                 <img src="./assets/gary.png" alt="Speaker 4">
-                <p>gary</p>
+                <div class="speaker-text">
+                    <h5>Frontend</h5>
+                <h2>Gary Marcus</h2>
+                <p>Staff Engineer, Vercel</p>
+                </div>
             </div>
             <div class="box-4">
                 <img src="./assets/mustafa.png" alt="Speaker 3">
-                <p>Mustafa Suleyman</p>
+                <div class="speaker-text">
+                    <h5>Security</h5>
+                    <h2>Mustafa Suleyman</h2>
+                    <p>CEO of Microsoft AI</p>
+                </div>
             </div>
+        </div>
     </section>
+ 
 
+<!-- pricing section -->
 
     <section class="secure-section">
-        <div>
-            <p><b>SECURE YOUR SPOT</b></p>
+        <div class="pricing-header">
+            <h2>SECURE YOUR SPOT</h2>
             <p>Early-bird pricing ends August 15, 2026.</p>
         </div>
-    </section>
-    <section>
 
-    <div class="form-container">
-        <h2>Admission Form</h2>
+        <div class="pricing-boxs">
+            <!-- 1st price -->
 
-        <form>
+        <div class="pricing-box1">
+            <div>
+                <div class="pricing-text">
+                <p>Standard</p>
+                <h1>$399</h1>
+                <h2>per person</h2>
+                <hr>
+             </div>
 
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Enter your full name">
+                <div>
+                    <ul class="pricing-list">
+                        <li>Access to all 3 conference days</li>
+                        <li>48 curated technical talks</li>
+                        <li>2 workshop sessions</li>
+                        <li>Networking lunch & coffee breaks</li>
+                        <li>Conference swag bag</li>
+                        <li>Digital recordings (30 days)</li>
+                    </ul>
+                </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email">
+                <div>
+                    <button class="pricing-button">Get Standard</button>
+                </div>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" placeholder="Enter your phone number">
-
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob">
-
-            <label>Gender</label>
-            <div class="gender">
-                <label><input type="radio" name="gender"> Male</label>
-                <label><input type="radio" name="gender"> Female</label>
-                <label><input type="radio" name="gender"> Other</label>
             </div>
-
-            <label for="address">Address</label>
-            <textarea id="address" rows="4" placeholder="Enter your address"></textarea>
-
-            <button type="submit">Apply Now</button>
-
-        </form>
-    </div>
-    </section>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 DEVCONF. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#"><img src="./assets/facebook.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="./assets/twitter.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="./assets/linkedin.png" alt="LinkedIn"></a></li>
-            </ul>
         </div>
 
+        <!-- 2nd Peice -->
+
+        <div class="pricing-box2">
+            <div>
+                <div class="pricing-text2">
+                <p>Pro</p>
+                <h1>$749</h1>
+                <h2>per person</h2>
+                <hr>
+                </div>
+
+                <div>
+                    <ul class="pricing-list2">
+                        <li>Everything in Standard</li>
+                        <li>Unlimited workshop access</li>
+                        <li>Speaker meet & greet</li>
+                        <li>VIP networking dinner</li>
+                        <li>Lifetime recording access</li>
+                        <li>1-on-1 mentorship (30 min)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <button class="pricing-button2">Get Pro</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 3rd Price -->
+
+        <div class="pricing-box3">
+            <div>
+                <div class="pricing-text">
+                <p>Team</p>
+                <h1>$5,999</h1>
+                <h2>up to 10 people</h2>
+                <hr>
+                </div>
+
+                <div>
+                    <ul class="pricing-list">
+                        <li>Everything in Pro (10 seats)</li>
+                        <li>Dedicated team lounge access</li>
+                        <li>Private workshop booking</li>
+                        <li>Company logo on event page</li>
+                        <li>Recruitment booth (1 day)</li>
+                        <li>Priority customer support</li>
+                    </ul>
+                </div>
+
+                <div class="button-box">
+                    <button class="pricing-button3">Contact Us</button>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        
+     </section>
+    <!-- Pricing Section End-->
+</body>
+</html>
 
 
 
 
 
+    </section>
+
+
+
+<!-- ================================
+     Admission Form Section
+================================= -->
+<section class="admission-form-section">
+
+    <div class="admission-form-container">
+
+        <!-- Form Heading -->
+        <div class="admission-form-header">
+            <h2 class="admission-form-title">Admission Form</h2>
+            <p class="admission-form-description">
+                Please fill out the form below to apply for admission.
+            </p>
+        </div>
+
+        <!-- Admission Form -->
+        <form class="admission-form-form" action="#" method="post">
+
+            <!-- Full Name -->
+            <div class="admission-form-group">
+                <label class="admission-form-label" for="admission-form-name">
+                    Full Name
+                </label>
+                <input
+                    class="admission-form-input"
+                    type="text"
+                    id="admission-form-name"
+                    name="full_name"
+                    placeholder="Enter your full name"
+                    required
+                >
+            </div>
+
+            <!-- Email -->
+            <div class="admission-form-group">
+                <label class="admission-form-label" for="admission-form-email">
+                    Email Address
+                </label>
+                <input
+                    class="admission-form-input"
+                    type="email"
+                    id="admission-form-email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+            </div>
+
+            <!-- Phone Number -->
+            <div class="admission-form-group">
+                <label class="admission-form-label" for="admission-form-phone">
+                    Phone Number
+                </label>
+                <input
+                    class="admission-form-input"
+                    type="tel"
+                    id="admission-form-phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="admission-form-group">
+                <label class="admission-form-label" for="admission-form-dob">
+                    Date of Birth
+                </label>
+                <input
+                    class="admission-form-input"
+                    type="date"
+                    id="admission-form-dob"
+                    name="date_of_birth"
+                    required
+                >
+            </div>
+
+            <!-- Address -->
+            <div class="admission-form-group admission-form-full-width">
+                <label class="admission-form-label" for="admission-form-address">
+                    Address
+                </label>
+                <textarea
+                    class="admission-form-textarea"
+                    id="admission-form-address"
+                    name="address"
+                    rows="4"
+                    placeholder="Enter your full address"
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Gender -->
+            <div class="admission-form-group">
+                <label class="admission-form-label" for="admission-form-gender">
+                    Gender
+                </label>
+                <select
+                    class="admission-form-select"
+                    id="admission-form-gender"
+                    name="gender"
+                    required
+                >
+                    <option value="" selected disabled>Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Previous Institution -->
+            <div class="admission-form-group">
+                <label class="admission-form-label" for="admission-form-institution">
+                    Previous Institution
+                </label>
+                <input
+                    class="admission-form-input"
+                    type="text"
+                    id="admission-form-institution"
+                    name="previous_institution"
+                    placeholder="Enter institution name"
+                >
+            </div>
+
+            <!-- Message -->
+            <div class="admission-form-group admission-form-full-width">
+                <label class="admission-form-label" for="admission-form-message">
+                    Additional Information
+                </label>
+                <textarea
+                    class="admission-form-textarea"
+                    id="admission-form-message"
+                    name="message"
+                    rows="4"
+                    placeholder="Write any additional information here..."
+                ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="admission-form-button-wrapper admission-form-full-width">
+                <button
+                    class="admission-form-submit"
+                    type="submit"
+                >
+                    Submit Application
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
 
 
 
 
+<!-- footer start -->
+    <section>
+        <footer>
+    <div class="footer-container">
 
+        <p>&copy; 2026 DevConf. All rights reserved.</p>
 
+        <div class="social-icons">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-x-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </div>
 
+        <div class="footer-links">
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Service</a>
+        </div>
 
+    </div>
+</footer>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- footer End -->
 </body>
 
 </html>
